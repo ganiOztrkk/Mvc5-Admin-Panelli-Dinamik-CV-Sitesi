@@ -1,0 +1,17 @@
+﻿@model CVProjectMvc.Models.Entity.Admin
+@{
+    ViewBag.Title = "AdminEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top: 40px">
+    <form method="post">
+        <label>Kullanıcı Adı</label>
+        <input type="text" name="KullaniciAdi" class="form-control" style="width: 50%"/>
+        <br/>
+        <label>Şifre</label>
+        <input type="text" name="Sifre" class="form-control" style="width: 50%"/>
+        <br/>
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>

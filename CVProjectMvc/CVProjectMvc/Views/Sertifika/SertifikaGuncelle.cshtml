@@ -1,0 +1,14 @@
+﻿@model CVProjectMvc.Models.Entity.Sertifika
+@{
+    ViewBag.Title = "SertifikaGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top: 40px">
+    <form method="post">
+        <label>Sertifika Detayları</label>
+        @Html.TextBoxFor(x => x.Sertifika1, new { @class = "form-control", @required = "" })
+        <br />
+        <button class="btn btn-primary">Kaydet</button>
+    </form>
+</div>

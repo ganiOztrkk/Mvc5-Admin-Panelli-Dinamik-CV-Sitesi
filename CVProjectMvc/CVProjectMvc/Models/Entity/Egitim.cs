@@ -7,6 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.ComponentModel.DataAnnotations;
+using System.Data;
+
 namespace CVProjectMvc.Models.Entity
 {
     using System;
@@ -15,6 +18,7 @@ namespace CVProjectMvc.Models.Entity
     public partial class Egitim
     {
         public int ID { get; set; }
+        [Required(ErrorMessage = "Boþ Geçilemez")]
         public string Baslik { get; set; }
         public string AltBaslik1 { get; set; }
         public string AltBaslik2 { get; set; }

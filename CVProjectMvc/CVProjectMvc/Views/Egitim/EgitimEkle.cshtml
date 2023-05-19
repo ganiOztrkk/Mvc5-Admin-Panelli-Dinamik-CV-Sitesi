@@ -1,0 +1,26 @@
+﻿@model CVProjectMvc.Models.Entity.Egitim
+@{
+    ViewBag.Title = "EgitimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top: 40px">
+    <form method="post">
+        @Html.Label("Eğitim Kurumu - Eğitim Başlık")
+        @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control", @required=""})
+        <br />
+        <label>Alt Başlık(Fakülte - Alan vb.)</label>
+        @Html.TextBoxFor(x => x.AltBaslik1, new { @class = "form-control" })
+        <br />
+        <label>2. Alt Başlık(Bölüm - Uzmanlık vb.)</label>
+        @Html.TextBoxFor(x => x.AltBaslik2, new { @class = "form-control" })
+        <br />
+        <label>Not Ortalaması(Tercih)</label>
+        @Html.TextBoxFor(x => x.GNO, new { @class = "form-control", @style = "width: 30%" })
+        <br />
+        <label>Tarih Aralığı</label>
+        @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control", @style = "width: 30%" })
+        <br />
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div> 

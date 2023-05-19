@@ -1,25 +1,34 @@
-﻿
+﻿@model CVProjectMvc.Models.Entity.Hakkimda
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-
+<br/>
 <div class="container">
-<h2>Hakkımda Menüsü</h2>
-
-    <table class="table table-bordered">
-        <tr>
-            <th>#</th>
-            <th>Ad</th>
-            <th>Soyad</th>
-            <th>Şehir</th>
-        </tr>
-        <tr>
-            <td>#</td>
-            <td>Gani</td>
-            <td>Öztürk</td>
-            <td>Tekirdağ</td>
-        </tr>
-    </table>
+    <form method="post">
+        <label>Ad</label>
+        <input type="text" class="form-control" name="Ad" value="@Model.Ad" />
+        <br />
+        <label>Soyad</label>
+        <input type="text" class="form-control" name="Soyad" value="@Model.Soyad" />
+        <br />
+        <label>Adres</label>
+        <input type="text" class="form-control" name="Adres" value="@Model.Adres" />
+        <br />
+        <label>Telefon</label>
+        <input type="text" class="form-control" name="Telefon" value="@Model.Telefon" />
+        <br />
+        <label>Mail</label>
+        <input type="text" class="form-control" name="Mail" value="@Model.Mail" />
+        <br />
+        <label>Fotoğraf</label>
+        <input type="text" class="form-control" name="Resim" value="@Model.Resim" />
+        <br />
+        <label>Açıklama</label>
+        <textarea class="form-control" name="Aciklama"rows="5">@Model.Aciklama</textarea>
+        <br />
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
 </div>
+<br/>

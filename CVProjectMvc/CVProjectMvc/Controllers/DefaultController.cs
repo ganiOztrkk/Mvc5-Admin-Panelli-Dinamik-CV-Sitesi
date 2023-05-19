@@ -7,6 +7,7 @@ using CVProjectMvc.Models.Entity;
 
 namespace CVProjectMvc.Controllers
 {
+    [AllowAnonymous]
     public class DefaultController : Controller
     {
         DbCVProjeEntities2 db = new DbCVProjeEntities2 ();
