@@ -1,0 +1,17 @@
+﻿@model CVProjectMvc.Models.Entity.Yetenek
+@{
+    ViewBag.Title = "YetenekEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top: 40px">
+    <form method="post">
+        <label>Yetenek & Beceri Detayları</label>
+        @Html.TextBoxFor(x=>x.Yetenek1, new {@class="form-control"})
+        <br />
+        <label>Başarı & Hakimiyet Oranı(0-100)</label>
+        @Html.TextBoxFor(x=>x.Oran, new {@class="form-control", @min=0, @max=100, @style="width: 15%", @value=0})
+        <br />
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>

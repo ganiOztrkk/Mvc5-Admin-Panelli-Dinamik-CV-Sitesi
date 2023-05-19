@@ -1,0 +1,13 @@
+﻿@model List<CVProjectMvc.Models.Entity.Hobi>
+
+
+<section class="resume-section" id="interests">
+    @foreach (var item in Model)
+    {
+        <div class="resume-section-content">
+            <h2 class="mb-5">Hobilerim</h2>
+            <p>@item.Aciklama1</p>
+            <p class="mb-0">@item.Aciklama2</p>
+        </div>
+    }
+</section>

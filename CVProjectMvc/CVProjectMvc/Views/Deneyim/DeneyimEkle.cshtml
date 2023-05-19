@@ -1,0 +1,19 @@
+﻿@model CVProjectMvc.Models.Entity.Deneyim
+@{
+    ViewBag.Title = "DeneyimEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top: 40px">
+    <form method="post">
+        <input type="text" name="Baslik" class="form-control" style="width: 50%" placeholder="Başlık...." />
+        <br />
+        <input type="text" name="AltBaslik" class="form-control" style="width: 50%" placeholder="Alt Başlık..." />
+        <br />
+        <input type="text" name="Tarih" class="form-control" style="width: 50%" placeholder="Tarih..." />
+        <br />
+        <textarea name="Aciklama" class="form-control" placeholder="Açıklama..." rows="5"></textarea>
+        <br />
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>

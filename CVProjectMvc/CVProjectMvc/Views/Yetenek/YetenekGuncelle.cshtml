@@ -1,0 +1,19 @@
+﻿@model CVProjectMvc.Models.Entity.Yetenek
+@{
+    ViewBag.Title = "YetenekGuncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container" style="margin-top: 40px">
+    <form method="post">
+        @Html.HiddenFor(x => x.ID)
+        <br />
+        <label>Yetenek & Beceri</label>
+        @Html.TextBoxFor(x => x.Yetenek1, new { @class = "form-control"})
+        <br />
+        <label>Başarı & Hakimiyet Oran</label>
+        @Html.TextBoxFor(x => x.Oran, new { @class = "form-control", @style = "width: 15%" })
+        <br />
+        <button class="btn btn-info">Güncelle</button>
+    </form>
+</div>
